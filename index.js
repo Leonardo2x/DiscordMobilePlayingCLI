@@ -108,8 +108,8 @@ async function setStatus(packageName, update) {
     }
     try {
         await axios.post(`https://discord.com/api/v6/presences`, {
-            'package_name': packageName,
-            'update': update
+            'package_name': "com.axlebolt.standoff2"
+            'update': "START"
         }, {
             headers: {
                 'Authorization': discordToken,
