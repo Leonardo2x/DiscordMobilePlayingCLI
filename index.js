@@ -17,7 +17,7 @@ myRL.setPrompt('> ');
 console.log('DiscordMobilePlayingCLI ready');
 
 let isStarted = false;
-let currentPackageName;
+let currentPackageName; "com.axlebolt.standoff2"
 let refreshInterval;
 
 myRL.on('line', async (line) => {
@@ -29,7 +29,7 @@ myRL.on('line', async (line) => {
                 console.log("Already started");
                 return;
             }
-            if(!currentPackageName) {
+            if(!currentPackageName) { "com.axlebolt.standoff2"
                 console.error('No package name set');
                 return;
             }
@@ -43,7 +43,7 @@ myRL.on('line', async (line) => {
                 console.error('Not started');
                 return;
             }
-            if(!currentPackageName) {
+            if(!currentPackageName) { "com.axlebolt.standoff2"
                 console.error('No package name set');
                 return;
             }
@@ -66,12 +66,12 @@ myRL.on('line', async (line) => {
                 console.error('Not started');
                 return;
             }
-            if(!currentPackageName) {
+            if(!currentPackageName) { "com.axlebolt.standoff2"
                 console.error('No package name set');
                 return;
             }
             console.log('Updating...');
-            process.title = `DiscordMobilePlayingCLI - Running - ${currentPackageName}`;
+            process.title = `DiscordMobilePlayingCLI - Running - ${currentPackageName}`; "com.axlebolt.standoff2"
             await setStatus(currentPackageName, "UPDATE");
             break;
         case 'exit':
@@ -92,7 +92,7 @@ function createRefreshInterval() {
     if(refreshInterval)
         clearInterval(refreshInterval);
 
-    process.title = `DiscordMobilePlayingCLI - Running - ${currentPackageName}`;
+    process.title = `DiscordMobilePlayingCLI - Running - ${currentPackageName}`; "com.axlebolt.standoff2"
 
     refreshInterval = setInterval(async () => {
         if(!isStarted) return;
@@ -102,8 +102,8 @@ function createRefreshInterval() {
 }
 
 async function setStatus(packageName, update) {
-    if(!currentPackageName) {
-        console.error('No package name set');
+    if(!currentPackageName) { "com.axlebolt.standoff2"
+        console.error('No package name set'); 
         return;
     }
     try {
