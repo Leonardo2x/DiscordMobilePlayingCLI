@@ -1,5 +1,5 @@
 require('dotenv').config();
-const discordToken = process.env.token; NTM5NDMyMDM0MDI0Njg1Nzk1.GPjjvs.9kUHwsm7Onvu-RX5X2Vzrb2p-klmCcJSMnSTR4
+const discordToken = process.env.token;
 const myRL = require("serverline");
 const axios = require("axios");
 
